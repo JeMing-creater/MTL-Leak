@@ -1,0 +1,31 @@
+trainer:
+  card_ID: '0'
+  dataset: nyud
+  # dataset: pascal
+  num_workers: 0
+  batch_size: 8
+  ten_eval: True
+  root_dir: ./files/defence_result/
+  defence_dir: ./files/defence_result/
+
+  # nyud
+  model_choose: hrnet18_semseg
+#  model_choose: hrnet18_depth
+#  model_choose: resnet50_semseg
+#  model_choose: resnet50_depth
+
+  # pascal
+#  model_choose: hrnet18_semseg
+#  model_choose: hrnet18_sal
+#  model_choose: hrnet18_normals
+#  model_choose: hrnet18_human_parts
+  # model_choose: resnet18_semseg
+  # model_choose: resnet18_sal
+  # model_choose: resnet18_normals
+  # model_choose: resnet18_human_parts
+
+  debug: True
+  resum: False
+
+
+

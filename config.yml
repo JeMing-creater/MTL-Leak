@@ -1,0 +1,39 @@
+trainer:
+  card_ID: '0'
+  # dataset: nyud
+  dataset: pascal
+  num_workers: 0
+  batch_size: 8
+  ten_eval: True
+  root_dir: ./files/mia_results/
+  defence_dir: ./files/defence_result/
+
+  # nyud
+  # model_choose: hrnet18_MTL_Baseline
+  # model_choose: hrnet18_PADNet
+  # model_choose: hrnet18_MTINet
+  # model_choose: resnet50_MTL_Baseline
+  # model_choose: resnet50_MTAN
+  # model_choose: resnet50_CrossStitch
+#  model_choose: resnet50_NDDRCNN
+
+  # pascal
+  # model_choose: hrnet18_MTL_Baseline
+  # model_choose: hrnet18_PADNet
+  # model_choose: hrnet18_MTINet
+  # model_choose: resnet18_MTL_Baseline
+  # model_choose: resnet18_MTAN
+  # model_choose: resnet18_CrossStitch
+  model_choose: resnet18_NDDRCNN
+
+  debug: True
+  resum: False
+
+MIA:
+  attack_lr: 0.001
+  warm_up: 2
+  attack_epochs: 50
+
+
+
+
